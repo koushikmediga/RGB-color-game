@@ -24,7 +24,7 @@ for (var i=0; i<squares.length;i++)
     squares[i].addEventListener("click",function(){
       var clickedcolor=this.style.backgroundColor;
       if(clickedcolor===pickedcolor){
-      	alert("correct");
+      	messageDisplay.textContent="correct";
       }
       	else{
       		this.style.backgroundColor= "#232323";
