@@ -6,6 +6,31 @@ var colorDisplay=document.getElementById("colordisplay");
 var messageDisplay=document.querySelector("#message");
 var h1=document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
+var easybtn = document.querySelector("#easy");
+var hardbtn = document.querySelector("#hard");
+
+easybtn.addEventListener("click",function(){
+   hardbtn.classList.remove("selected");
+   easybtn.classList.add("selected");
+   colors=generateRandomColors(3);
+   pickedcolor=pickcolor();
+   colorDisplay.textContent=pickedcolor;
+   for(var i=0;i<squares.length;i++){
+   	if(colors[i]){
+   		squares[i].style.backgroundColor=colors[i];
+   	}
+   	else {
+   		squares[i].style.display="none";
+   	}
+   }
+
+});
+
+hardbtn.addEventListener("click",function(){
+	easybtn.classList.remove("selected");
+	hardbtn.classList.add("selected");
+   
+});
 
 resetButton.addEventListener("click",function(){
 	//generate al new colors
