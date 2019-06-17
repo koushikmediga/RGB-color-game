@@ -25,6 +25,8 @@ for (var i=0; i<squares.length;i++)
       var clickedcolor=this.style.backgroundColor;
       if(clickedcolor===pickedcolor){
       	messageDisplay.textContent="correct";
+      	changecolors(clickedcolor);
+
       }
       	else{
       		this.style.backgroundColor= "#232323";
@@ -32,4 +34,11 @@ for (var i=0; i<squares.length;i++)
       	}
     });
 
+
+}
+
+function changecolors(color){
+	for(var i=0; i<colors.length;i++){
+		squares[i].style.backgroundColor=color;
+	}
 }
