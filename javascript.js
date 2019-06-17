@@ -50,13 +50,15 @@ resetButton.addEventListener("click",function(){
 	pickedcolor=pickcolor();
 	//change colordisplay to match picked color
 	colorDisplay.textContent=pickedcolor;
+	this.textContent="New Colors";
+	messageDisplay.textContent="";
 	//change colors of squares
 	for (var i=0; i<squares.length;i++)
        {
 	squares[i].style.backgroundColor= colors[i];
        }
     //reset heading color for a new game
-    h1.style.backgroundColor="#232323";
+    h1.style.backgroundColor="steelblue";
 
 });
 
