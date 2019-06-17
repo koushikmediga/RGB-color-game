@@ -11,6 +11,7 @@ var colors = [
 var squares = document.querySelectorAll(".square");
 var pickedcolor=colors[3];
 var colorDisplay=document.getElementById("colordisplay");
+var messageDisplay=document.querySelector("#message");
 
 
 colorDisplay.textContent=pickedcolor;
@@ -27,6 +28,7 @@ for (var i=0; i<squares.length;i++)
       }
       	else{
       		this.style.backgroundColor= "#232323";
+      		messageDisplay.textContent="try again";
       	}
     });
 
