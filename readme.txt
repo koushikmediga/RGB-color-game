@@ -1,4 +1,4 @@
-<!------------------------------This is a game with good interface-------------------------------------------!>
+<!------------------------------This is a RGB COLOR GAME -----------------------------------------------!>
 
 ---->The theme of this game is guessing the color with the given "rgb combination"
 
